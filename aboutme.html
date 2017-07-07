@@ -1,5 +1,72 @@
 <!DOCTYPE html>
 <html>
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: black;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1>Edie Arteaga</h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="#">Welcome</a></li>
+  
+</ul>
+</nav>
+
+<article class="About me">
+  <h1>Biography</h1>
+  <p>Hi my name is Edie Arteaga, I am a senior at Burlingame High School in California. I am a curious and ambitious leader because I enjoy learning computer science and I find the fusion of technology with everyday life to be paramount. As I move forward in my soon knowledge of Java, HTML, and Python, I will work to bind these languages into everyday fundamentals. <small>
+<hr>
+</article>
+
+<footer>@EdieArteaga</footer>
+</div>
+
+</body>
+</html>
+
 <body style="background-color: #e6f2ff;">
 
 <h2 style="text-align:center;">Welcome</h2>
