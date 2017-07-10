@@ -1,56 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
-.flex-container {
-    display: -webkit-flex;
-    display: flex;  
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
     text-align: center;
 }
 
-.flex-container > * {
-    padding: 15px;
-    -webkit-flex: 1 100%;
-    flex: 1 100%;
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
 }
 
-.article {
-    text-align: left;
-}
-
-header {background: black;color:white;}
-footer {background: #aaa;color:white;}
-.nav {background:#eee;}
-
-.nav ul {
+nav ul {
     list-style-type: none;
     padding: 0;
 }
-.nav ul a {
+   
+nav ul a {
     text-decoration: none;
 }
 
-@media all and (min-width: 768px) {
-    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
-    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
-    footer {-webkit-order:3;order:3;}
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
 }
 </style>
 </head>
 <body>
 
-<div class="flex-container">
+<div class="container">
+
 <header>
-  <h1>Edie Arteaga</h1>
+   <h1>Edie Arteaga</h1>
 </header>
+  
+<nav>
+  <ul>
+  
+    <a href="https://www.instagram.com/edie.arteaga/">
+    <img src="http://www.underconsideration.com/brandnew/archives/instagram_2016_icon.jpg"alt= "My Instagram"
+style="width:60px;height:60px;">
+	<a/>
+    <a href="https://twitter.com/edie_arteaga">
+ 	<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Twitter-icon.png"alt= "My Twitter"
+style="width:48px;height:48px;">
+    <img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png"alt= "My Linkedin"
+style="width:41px;height:39px;">
 
+  </ul>
+</nav>
 
-<p id="demo" style="display:none">Hi my name is Edie Arteaga, I am a senior at Burlingame High School in California. I am a curious and ambitious leader because I enjoy learning computer science and I find the fusion of technology with everyday life to be paramount. As I move forward in my soon knowledge of Java, HTML, and Python, I will work to bind these languages into everyday fundamentals.</p>
-
-<button type="button" onclick="document.getElementById('demo').style.display='block'">Biography</button>
+<article>
+  <h1>About Me:</h1>
+  <p>Hi my name is Edie Arteaga, I am a senior at Burlingame High School in California. I am a curious and ambitious leader because I enjoy learning computer science and I find the fusion of technology with everyday life to be paramount. As I move forward in my soon knowledge of Java, HTML, and Python, I will work to bind these languages into everyday fundamentals.</p>
 </article>
+
+</div>
 
 </body>
 </html>
@@ -81,10 +99,8 @@ footer {background: #aaa;color:white;}
 <h5 style="font-size:170%;">My Work:<h4/> 
 <p> Scratch Side Scroller Game </p> 
 
-<img src="https://i.imgur.com/GqaRbb4.png" alt="Scratch_Screenshot" style="width:320px;height:228px;">
+<img src="https://i.imgur.com/GqaRbb4.png" alt="Scratch_Screenshot"style="width:320px;height:228px;">
 <hr>
 
 <footer>@EdieArteaga</footer>
 </div>
-
-
